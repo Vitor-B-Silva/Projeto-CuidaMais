@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<!--
+  ============================================================
+  PROJETO: Site do Cuida Mais (tecnologia assistiva para cuidadores de idosos)
+  ARQUIVO: index.html  -> estrutura (conteúdo) da página
+  RELACIONADOS: style.css (visual) e script.js (comportamento/API)
+
+  COMO EDITAR:
+   - Textos e nomes: altere direto aqui, dentro das tags.
+   - Cores e fontes: veja as variáveis no topo do style.css.
+   - Opções do formulário e API: veja CONFIG no script.js.
+  ============================================================
+-->
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cuida Mais | Tecnologia assistiva para quem cuida de idosos</title>
+  <!-- Fontes do Google (Outfit para títulos, Nunito Sans para texto) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;700&family=Nunito+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== MENU DO TOPO ===== -->
+  <header class="topo">
+    <a class="logo" href="#inicio">Cuida Mais</a>
+    <nav>
+      <a href="#quem-somos">Quem somos</a>
+      <a href="#mvv">Missão e valores</a>
+      <a href="#historia">História</a>
+      <a href="#solucoes">Soluções</a>
+      <a href="#circuito">Circuito</a>
+      <a href="#equipe">Equipe</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ===== ITEM 2 DO TRABALHO: IMAGEM DA EMPRESA ===== -->
+    <section id="inicio" class="hero">
+      <div class="hero-texto">
+        <h1>Tecnologia que ajuda quem cuida.</h1>
+        <p>Soluções assistivas de baixo custo para cuidadores e casas de repouso, com mais segurança para o idoso.</p>
+        <a class="botao" href="#contato">Fale com a gente</a>
+      </div>
+      <img src="images/instituicao.svg" alt="Ilustração de uma casa de repouso com um coração, símbolo do Cuida Mais">
+    </section>
+
+    <!-- ===== QUEM SOMOS ===== -->
+    <section id="quem-somos" class="secao">
+      <h2>Quem somos</h2>
+      <div class="texto-largo">
+        <p>O Cuida Mais é uma iniciativa inovadora voltada para a interseção entre tecnologia, saúde e bem-estar. Nascido com o propósito de transformar a realidade do acompanhamento à pessoa idosa, o projeto desenvolve soluções tecnológicas assistivas, utilizando plataformas como Arduino e sistemas de sensores inteligentes, projetadas especificamente para apoiar cuidadores e instituições de longa permanência para idosos (ILPIs).</p>
+        <p>Acreditamos que a tecnologia não deve substituir o calor humano, mas sim atuar como um aliado estratégico. Por isso, nossas ferramentas são desenhadas para auxiliar na identificação preventiva de situações de risco, otimizar rotinas e proporcionar maior tranquilidade aos profissionais, permitindo que o cuidado seja cada vez mais seguro, organizado e centrado na pessoa.</p>
+      </div>
+    </section>
+
+    <!-- ===== MISSÃO, VISÃO E VALORES ===== -->
+    <section id="mvv" class="secao cinza">
+      <h2>Missão, visão e valores</h2>
+      <div class="grade">
+        <article class="mvv-card">
+          <h3>Missão</h3>
+          <p>Desenvolver soluções de tecnologia assistiva de baixo custo para auxiliar cuidadores de idosos, prevenindo quedas, lesões por pressão e otimizando a rotina nas casas de repouso.</p>
+        </article>
+        <article class="mvv-card">
+          <h3>Visão</h3>
+          <p>Ser referência em inovação acessível para instituições de longa permanência, promovendo segurança, saúde e dignidade para a terceira idade.</p>
+        </article>
+        <article class="mvv-card">
+          <h3>Valores</h3>
+          <ul class="valores">
+            <li>Empatia</li>
+            <li>Segurança do idoso</li>
+            <li>Respeito ao cuidador</li>
+            <li>Inovação acessível</li>
+            <li>Responsabilidade social</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== ITEM 1 DO TRABALHO: HISTÓRICO DA EMPRESA ===== -->
+    <!-- ATENÇÃO: etapas provisórias. Troque pelas datas e fatos reais do projeto. -->
+    <section id="historia" class="secao">
+      <h2>Nossa história</h2>
+      <div class="linha-tempo">
+        <div><strong>A ideia</strong><p>Percebemos o quanto quedas e lesões por pressão pesam na rotina dos cuidadores em casas de repouso.</p></div>
+        <div><strong>Pesquisa</strong><p>Estudamos as necessidades das ILPIs e as soluções de tecnologia assistiva já existentes.</p></div>
+        <div><strong>Protótipo</strong><p>Construímos as primeiras versões com Arduino e sensores de baixo custo.</p></div>
+        <div><strong>Hoje</strong><p>Seguimos aprimorando as soluções para que cheguem a mais instituições.</p></div>
+      </div>
+    </section>
+
+    <!-- ===== ITEM 3 DO TRABALHO: PRODUTOS E SERVIÇOS (imagem + texto) ===== -->
+    <!-- ATENÇÃO: soluções baseadas na missão do projeto. Ajuste os nomes e textos conforme o que o grupo desenvolveu. -->
+    <section id="solucoes" class="secao cinza">
+      <h2>Nossas soluções</h2>
+      <div class="grade">
+        <article class="cartao">
+          <img src="images/quedas.svg" alt="Idoso com sensor de monitoramento">
+          <h3>Prevenção de quedas</h3>
+          <p>Sensores inteligentes ajudam a identificar situações de risco e avisam o cuidador a tempo de agir.</p>
+        </article>
+        <article class="cartao">
+          <img src="images/pressao.svg" alt="Cama com indicação de mudança de posição">
+          <h3>Prevenção de lesões por pressão</h3>
+          <p>Apoio ao acompanhamento do posicionamento do idoso, para reduzir o risco de lesões por pressão.</p>
+        </article>
+        <article class="cartao">
+          <img src="images/rotina.svg" alt="Lista de tarefas concluídas">
+          <h3>Rotina mais organizada</h3>
+          <p>Ferramentas que otimizam as tarefas do dia a dia e dão mais tranquilidade aos profissionais.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== ABA NOVA: CIRCUITO ARDUINO ===== -->
+    <!-- Texto de apresentação conforme pedido pelo líder do grupo. A imagem é o esquema do circuito. -->
+    <section id="circuito" class="secao">
+      <h2>O circuito do projeto</h2>
+      <p class="texto-largo destaque-texto">Este é o circuito utilizado no nosso projeto, capaz de detectar a umidade de uma fralda de um idoso, assim como se o mesmo se encontra na sua cama, para garantir segurança e organização para a equipe de enfermagem.</p>
+      <div class="circuito">
+        <figure>
+          <img src="images/circuito-arduino.png" alt="Esquema do circuito com Arduino UNO, sensor de proximidade, sensor de umidade, tela LCD 16x2, buzzer e LED">
+          <figcaption>Esquema do circuito com Arduino UNO</figcaption>
+        </figure>
+        <div>
+          <p class="resumo-circuito">Sensores de umidade e proximidade que acionam o buzzer, o visor LCD e um LED.</p>
+          <h3>O circuito conta com:</h3>
+          <ul class="componentes">
+            <li><strong>LED</strong> que acende quando qualquer uma das condições for atendida</li>
+            <li><strong>Sensor de proximidade</strong> posto perto da cama do idoso para monitoramento</li>
+            <li><strong>Tela LCD 16x2</strong> para avisar a equipe do estado do idoso</li>
+            <li><strong>Sensor de umidade</strong> que monitora a fralda do idoso</li>
+            <li><strong>Buzzer</strong> para um aviso sonoro</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ITEM 4 DO TRABALHO: EQUIPE (avatar + função) ===== -->
+        <section id="equipe" class="secao cinza">
+      <h2>Equipe de desenvolvimento</h2>
+      <!-- Para cada integrante: avatar (images/avatar-NOME.svg), nome, função e RA. Para usar foto real, troque o src por images/foto.jpg.
+           Funções "a definir" são provisórias: troque pelo texto real. -->
+      <div class="grade equipe">
+        <div class="membro"><img class="avatar" src="images/avatar-alison.svg" alt="Avatar de Alison Farias de Souza"><h3>Alison Farias de Souza</h3><p>Documentação</p><small class="ra">RA: 325100783</small></div>
+        <div class="membro"><img class="avatar" src="images/avatar-vitor.svg" alt="Avatar de Vitor Barbosa Silva"><h3>Vitor Barbosa Silva</h3><p>Desenvolvimento do Vídeo</p><small class="ra">RA: 325200008</small></div>
+        <div class="membro"><img class="avatar" src="images/avatar-shirlei.svg" alt="Avatar de Shirlei Cerqueira Silva"><h3>Shirlei Cerqueira Silva</h3><p>Arduino</p><small class="ra">RA: 2125101682</small></div>
+        <div class="membro"><img class="avatar" src="images/avatar-felipe.svg" alt="Avatar de Felipe Alves Bezerra da Silva"><h3>Felipe Alves Bezerra da Silva</h3><p>Desenvolvimento do Site</p><small class="ra">RA: 324200343</small></div>
+        <div class="membro"><img class="avatar" src="images/avatar-victor.svg" alt="Avatar de Victor Augusto Fibla Santos"><h3>Victor Augusto Fibla Santos</h3><p>Criador do Banner</p><small class="ra">RA: 325200234</small></div>
+        <div class="membro"><img class="avatar" src="images/avatar-leonardo.svg" alt="Avatar de Leonardo Alves Ruedas"><h3>Leonardo Alves Ruedas</h3><p>Documentação</p><small class="ra">RA: 325101102</small></div>
+        <div class="membro"><img class="avatar" src="images/avatar-gabriel.svg" alt="Avatar de Gabriel Charete Del’labon"><h3>Gabriel Charete Del’labon</h3><p>Desenvolvimento do Site</p><small class="ra">RA: 324200597</small></div>
+        <div class="membro"><img class="avatar" src="images/avatar-thais.svg" alt="Avatar de Thaís Naomi Encinas Rios"><h3>Thaís Naomi Encinas Rios</h3><p>Arduino</p><small class="ra">RA: 326102405</small></div>
+      </div>
+    </section>
+
+    <!-- ===== ITENS 5 E 6 DO TRABALHO: FORMULÁRIO DE CONTATO + API DE CEP ===== -->
+    <!-- Os campos rua, bairro e cidade são preenchidos pelo script.js (ViaCEP). São readonly para ninguém digitar por cima. -->
+    <section id="contato" class="secao">
+      <h2>Fale com a gente</h2>
+      <form id="form-contato" novalidate>
+        <label>Nome completo
+          <input type="text" id="nome" autocomplete="name" required>
+        </label>
+        <div class="dupla">
+          <label>E-mail
+            <input type="email" id="email" autocomplete="email" required>
+          </label>
+          <label>Telefone
+            <input type="tel" id="telefone" inputmode="numeric" maxlength="15" placeholder="(11) 90000-0000" required>
+          </label>
+        </div>
+        <label>Você é
+          <!-- As opções são montadas pelo script.js a partir de CONFIG.perfis -->
+          <select id="perfil" required></select>
+        </label>
+        <label>CEP da instituição ou residência
+          <input type="text" id="cep" inputmode="numeric" maxlength="9" placeholder="00000-000" required>
+          <small id="cep-msg" aria-live="polite"></small>
+        </label>
+        <label>Rua
+          <input type="text" id="rua" readonly>
+        </label>
+        <div class="dupla">
+          <label>Bairro
+            <input type="text" id="bairro" readonly>
+          </label>
+          <label>Cidade / UF
+            <input type="text" id="cidade" readonly>
+          </label>
+        </div>
+        <label>Mensagem
+          <textarea id="mensagem" rows="4" required></textarea>
+        </label>
+        <button class="botao" type="submit">Enviar mensagem</button>
+        <p id="retorno" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>Cuida Mais · Projeto acadêmico · Tecnologia assistiva com empatia</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
